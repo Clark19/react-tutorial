@@ -1,5 +1,10 @@
+html { font-size: 62.5%; }
+
 .App {
-  text-align: center;
+  /* text-align: center; */
+  font-size: 2rem;
+  border: solid 1px black;
+  max-width: 40rem;
 }
 
 .App-logo {
@@ -36,3 +41,5 @@
     transform: rotate(360deg);
   }
 }
+
+
