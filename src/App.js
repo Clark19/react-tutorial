@@ -27,9 +27,7 @@ function App() {
     history.push(`/read/${topics.length+1}`);
   }
   
-  const updateHandler = ({id, title, body}) => {
-    debugger;
-    // alert(id+title + body)
+  const onUpdate = ({id, title, body}) => {
     setTopics(cur => {
       const newTopics = [...cur];
       newTopics[id-1] = {id, title, body};
@@ -51,7 +49,7 @@ function App() {
         <Create onCreate={onCreate}/>
       </Route>
       <Route path="/update/:id">
-        <Update updateHandler={updateHandler} topics={topics} />
+        <Update onUpdate={onUpdate} topics={topics} />
       </Route>
 
       <Route path="/read/:id">

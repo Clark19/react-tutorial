@@ -1,20 +1,17 @@
-import React, {useRef, useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router';
-// import {} from 'react-router-dom'
 
-export const Update = ({updateHandler, topics}) => {
-  const titleRef = useRef();
-  const bodyRef = useRef();
+export const Update = ({onUpdate, topics}) => {
   const params = useParams()
   const id = parseInt(params.id)
   const topic = topics.find(item => item.id === id);
   const [content, setContent] = useState(topic)
-  // const [body, setBody] = useState(topic.body);
 
-  const onUpdate = (e) => {
+  useEffect(() => console.log('Update Comp 랜더링 호출 확인용'));
+
+  const onUpdateClick = (e) => {
     e.preventDefault();
-    updateHandler(content);
-    debugger;
+    onUpdate(content);
   };
 
   function onChange(e) {
@@ -29,8 +26,8 @@ export const Update = ({updateHandler, topics}) => {
 
   return (
   <div className='App'>(CreateComp)
-    <div><input name='title' ref={titleRef} value={content.title} onChange={onChange} /></div>
-    <div><input name='body' ref={bodyRef} value={content.body} onChange={onChange} /></div>
-    <div><button onClick={onUpdate}>Update</button></div>
+    <div><input name='title' value={content.title} onChange={onChange} /></div>
+    <div><input name='body' value={content.body} onChange={onChange} /></div>
+    <div><button onClick={onUpdateClick}>Update</button></div>
   </div>);
 };
