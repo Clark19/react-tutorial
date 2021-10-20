@@ -9,7 +9,7 @@ export function Controller({deleteHandler}) {
   }
 
   return (<>
-  {'Controller Component'}
+  {'(Controller Component)'}
   <ul>
     <li><Link to='create'>Create</Link></li>
     <Route path='/read/:id'>
