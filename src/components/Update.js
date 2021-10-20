@@ -18,7 +18,7 @@ export const Update = ({onUpdate, topics}) => {
   };
 
   return (
-  <div className='App'>(CreateComp)
+  <div className='App'>(Update Component)
     <div><input name='title' ref={titleRef} defaultValue={topic.title} /></div>
     <div><input name='body' ref={bodyRef} defaultValue={topic.body} /></div>
     <div><button onClick={onUpdateClick}>Update</button></div>

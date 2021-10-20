@@ -1,5 +1,15 @@
 # 생활코딩 리액트 강의랑 엘리스 학습 후 안보고 만들어 본 리액트 & 리액트 라우터 기본 앱
 
+![*초기 진입 화면](./img/ract_and_router.png)
+
+![* 메뉴에 해당하는 네비게이션의 링크(1.html, 2.css) 누르면 해당 글에 내용과 그 글에대한 업데이트나 삭제 기능의 UI 컴포넌트가 나타남](./img/ract_and_router2.png)
+
+
+![*글 수정(업데이트 콤포넌트) 테스트 화면](./img/ract_and_router3.png)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
