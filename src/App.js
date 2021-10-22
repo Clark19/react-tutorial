@@ -12,6 +12,8 @@ import { Update } from './components/Update';
 const topicsJson = [
   { id: 1, title: 'html', body: 'html is ...' },
   { id: 2, title: 'css', body: 'css is ...' },
+  { id: 3, title: '구글 검색', body: '구글 검색 is ...' },
+  { id: 4, title: 'jsonplaceholder', body: 'jsonplaceholder is ...' },
 ];
 
 function App() {
